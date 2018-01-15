@@ -61,14 +61,18 @@ public class Main {
     public static void Judge(Player user1, Player user2) {
         if(user1.getScore()<user2.getScore() &&user2.getScore()<= 21){
             System.out.println(user2.getName() + "の勝利！");
+            System.out.println(user1.getName() + "の負け。");
         }else if(user2.getScore() <user1.getScore() &&user1.getScore()<= 21){
             System.out.println(user1.getName() + "の勝利！");
+            System.out.println(user2.getName() + "の負け。");
         }
         else if (user2.getScore()>= 21 &&user1.getScore()<= 21){
             System.out.println(user1.getName() + "の勝利！");
+            System.out.println(user2.getName() + "の負け。");
         }
         else if (user1.getScore()>= 21 &&user2.getScore()<= 21) {
             System.out.println(user2.getName() + "の勝利！");
+            System.out.println(user1.getName() + "の負け。");
         }
         else{
             System.out.println("引き分け");
