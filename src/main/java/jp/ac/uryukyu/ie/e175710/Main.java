@@ -6,6 +6,7 @@ public class Main {
         Player user2 = new Player("Hanako");
         Deck deck = new Deck();
 
+        System.out.println("ゲームを開始します。");
         int num = deck.draw();
         if(num >=10){
             num =10;
