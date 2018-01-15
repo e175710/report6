@@ -8,7 +8,6 @@ class DeckTest {
     int [] cards;
     @Test
     int draw() {
-        public int draw(){
             Random rnd = new Random();
             int num = 0;
             int result ;
@@ -19,7 +18,7 @@ class DeckTest {
             cards[num] = 0;//引いたカードを０と置き換える。
             return result;
 
-        }
+
     }
 
 }
