@@ -3,15 +3,16 @@ package jp.ac.uryukyu.ie.e175710;
 import java.util.Random;
 
 public class Player{
- String name;//プレイヤーの名前
- int card;//13枚のカード
+     private String name;//プレイヤーの名前//
+     private int score;//52枚のカード
 
- public Player(String name){
-  this.name = name;
- }
+     public Player(String name){
+     this.name = name;
+     }
+     public void add(int point){
+       score += point;
+     }
+    public String getName(){return name; }
+    public int getScore(){return score; }
 
- public void card(){
-  Random rnd = new Random();
-  card = rnd.nextInt(13) + 1;
- }
 }
