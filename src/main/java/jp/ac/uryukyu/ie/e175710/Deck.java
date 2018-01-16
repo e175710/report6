@@ -1,5 +1,7 @@
 package jp.ac.uryukyu.ie.e175710;
+
 import java.util.Random;
+
 public class Deck {
     int [] cards;
     public Deck(){//1~13までのカードの用意//
